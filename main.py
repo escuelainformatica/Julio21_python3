@@ -15,8 +15,8 @@ from EncomiendaServicio import EncomiendaServicio
 # SOLID = es mas complicado.
 
 
-enc = Encomienda()
-enc_s=EncomiendaServicio()
+enc = Encomienda()  # propiedades (modelo)
+enc_s = EncomiendaServicio()  # solo funciones (servicio).
 
 enc_s.agregar_encomienda(enc)
 total = enc_s.calcular(enc)
