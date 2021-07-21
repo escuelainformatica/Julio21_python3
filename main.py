@@ -7,6 +7,7 @@
 # 3) UI (no tengo)
 # 4) agrupacion
 from Encomienda import Encomienda
+from EncomiendaServicio import EncomiendaServicio
 
 # OOP Programacion orientada a objecto.  Interface
 # SRP Responsabilidad de principio simple.
@@ -15,9 +16,10 @@ from Encomienda import Encomienda
 
 
 enc = Encomienda()
+enc_s=EncomiendaServicio()
 
-enc.agregar_encomienda()
-total = enc.calcular()
-enc.mostrar()
+enc_s.agregar_encomienda(enc)
+total = enc_s.calcular(enc)
+enc_s.mostrar(enc)
 print("el destino: ", enc.destino)   # $enc->destino
 print("el total es ", total)
